@@ -72,3 +72,46 @@
    ```bash
    This updated template includes instructions for using Poetry to install dependencies and run the application.
    ```
+
+http://127.0.0.1:5000/alm/api/domains
+[
+  "Domain1",
+  "Domain2"
+]
+
+http://127.0.0.1:5000/alm/api/projects/Domain1
+[
+  "Project1",
+  "Project2"
+]
+
+http://127.0.0.1:5000/alm/api/projects/Domain2
+[
+  "Project3",
+  "Project4"
+]
+
+http://127.0.0.1:5000/alm/api/modules/Project4
+[
+  "Module7",
+  "Module8"
+]
+
+http://127.0.0.1:5000/alm/api/submodules/Module8
+[
+  "SubModule8.1",
+  "SubModule8.2"
+]
+
+
+http://127.0.0.1:5000/alm/api/folders/SubModule8.2
+[
+  "Folder8.2.1",
+  "Folder8.2.2"
+]
+
+http://127.0.0.1:5000/alm/api/testcases/Folder8.2.2
+[
+  "TestCase8.2.2.1",
+  "TestCase8.2.2.2"
+]
